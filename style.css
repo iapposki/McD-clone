@@ -1,3 +1,46 @@
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.header-right{
+    color: black;
+    padding-right: 7%;
+    padding-top: 23px;
+    font-weight: bold;
+    font-family: sans-serif;
+    float: right;
+    word-spacing: 15px;
+}
+
+.header-left{
+    flex: 30%;
+    padding-top: 5px;
+}
+
+
+.header-right a:hover {
+    background-color: #ddd;
+    color: black;
+    
+}
+
+.header-right{
+    flex: 70%;
+    direction: rtl;
+}
+section{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
 red_bold{
     color: red;
     font-weight: bold;
@@ -6,64 +49,40 @@ red_bold{
 .menu-highlight{
     background-color: #FFBC0D;
     border-radius: 0 0 70px 0;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 40px 20px 20px;
     font-family: sans-serif;
-
 }
 
 .menu-general{
-    padding-left: 7.5%;
     padding-right: 50%;
 }
 
 .calories{
     background-color: #DB0007;
-    border-radius: 30px;
+    border-radius: 70px;
     color: white;
-    padding: 0px 10px 0px 10px ;
-    width: 200px;
+    padding: 5px 10px 5px 10px ;
+}
+
+.calories th,td{
+    padding: 5px 10px 5px 10px;
     text-align: center;
 }
 
-.header{
-    overflow: hidden;
-
-}
-
-.header-right{
-    color: black;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-.header a{
-    float: left;
-    padding: 12px;
-    line-height: 25px;
-}
-
-.header-right a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.header-right{
-    float: right;
-}
 
 .delivery{
-    padding-left: 7.5%;
-    padding-right: 7.5%;
     display: flex;
 }
 
 .delivery-left{
     flex: 50%;
     font-family: sans-serif;
+    padding-right: 5px;
 }
 
 .delivery-right{
     flex: 50%;
+    background-color: rgb(255, 202, 65) ;
 }
 
 .order-now{
