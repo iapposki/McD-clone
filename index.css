@@ -3,64 +3,65 @@
     scroll-behavior: smooth;
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--primary-color);
 }
 
-section{
-    /* padding-left: 7.5%;
-    padding-right: 7.5%; */
+.height-setter-section-1 div{
+    height: 25em;
 }
 
-body{
-    font-family: sans-serif;
+.header-padding{
+    padding: 0px 1.25em 0px 0px;
+
 }
 
-.header{
-    display: flex;
-    position: sticky;
-    top: 0px;
+
+.no-list-style ul li{
+    list-style-type: none;
+}
+
+.no-list-style ul li:hover{
     background-color: white;
+    
+    
 }
 
-.header-right{
-    color: black;
-    padding-right: 7%;
-    padding-top: 23px;
-    font-weight: 900;
-    font-size: 13pt;
-    font-family: sans-serif;
-    float: right;
-    word-spacing: 15px;
-    flex: 70%;
-    direction: rtl;
-}
-
-.header-left{
-    flex: 30%;
-    padding-top: 5px;
-}
-
-
-.header-right a:hover {
-    background-color: white;
+.no-list-style ul li:hover a{
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-color: red;
-    
-}
-.header-right a:visited{
-    color: black;
-}
-
-.header-right a{    
-    text-decoration: none;
 }
 
 red_bold{
     color: red;
     font-weight: bold;
+}
+
+
+.main-section{
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "left right";
+    height: 100%;
+}
+
+.main-section-left{
+    grid-template-areas: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbc0d;
+    text-align: center;
+
+}
+
+.main-section-right{
+    grid-template-areas: right;
+    background-image: url(./assets/makhani-burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .menu-highlight{
@@ -70,6 +71,7 @@ red_bold{
     font-family: sans-serif;
     font-weight: 800;
     font-size: 25px;
+    padding-left: 4em;
 }
 
 .menu-general{
@@ -79,6 +81,15 @@ red_bold{
     "sidebar image";
     justify-items: center;
     align-items: center;
+}
+
+.menu-general p,table{
+    margin-left: 4em;
+    margin-right: 5em;
+}
+
+.menu-general img{
+    width: 28em;
 }
 
 .menu-sidebar{
@@ -186,3 +197,30 @@ red_bold{
     padding: 10px 30px 10px 30px;
 }
 
+.instagram{
+    background-color: #f7f7f7;
+
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "sidebar content";
+}
+
+.instagram-left{
+    grid-area: sidebar;
+    background-color: #00b7ad;
+    /* height: 30em; */
+    height: 100%;
+}
+
+.instagram-right{
+    grid-area: content;
+    gap: 1.5em;
+    margin: 0.5em;
+}
+
+.insta-item{
+    width: 14em;
+}
+
+.insta-border{
+    border-radius: 15px;
+}

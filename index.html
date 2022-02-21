@@ -7,31 +7,54 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link href="./common.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/9881637d1e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header class="header">
-            <a class="header-left"><img style="margin-left: 25px;" width="90px" src="./assets/mcd.png"/></a>
-            <nav class="header-right" >
-                <a href="#menu">Menu</a>
-                <a href="#app-android">HappyMeal</a>
-                <a href="#store-locator">Restaurents</a>
-                <a href="#delivery">McDelivery</a>
-                <a href="#news">News</a>
+        <header class="flex align-center width-100-percent header-padding sticky">
+            <div class=" flex flex-1 flex-center">
+                <img src="./assets/logo-symbol.svg"/>
+            </div>
+            <nav class="flex-3 no-list-style nav" >
+                <ul class="flex move-right gap justify-center" style="font-weight: 800;">
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#app-android">HappyMeal</a>
+                    </li>
+                    <li>
+                        <a href="#store-locator">Restaurents</a>
+                    </li>
+                    <li>
+                        <a href="#delivery">McDelivery</a>
+                    </li>
+                    <li>
+                        <i style="padding: 0 10px;" class="fa-solid fa-bars"></i>
+                    </li>
+                </ul>
             </nav>
         </header>
 
-        <section>
-            <img />
-            <button>&#60;</button>
-            <button>&#62;</button>
+        <section id="main" class="grid main-section">
+            <div class="main-section-left ">
+                <span style="font-family: sans-serif; font-size: 40px; font-weight: 900; word-spacing: 1px; color: #db0007;"> All New<br>
+                Dil Se Makhani<br>
+                BURGERS<br></span>
+            </div>
+            <div class="main-section-right">
+                
+            </div>
+
         </section>
 
-        <section id="menu" style="padding: 0 10% 0 10%;">
+        <section id="menu" class="height-setter-section-1">
 
-            <a> BURGERS & WRAPS</a>
+            <!-- <a> BURGERS & WRAPS</a>
             <button>&#60;</button>
-            <button>&#62;</button>
+            <button>&#62;</button> -->
 
             <div class="menu-general">
                 <div class="menu-content"><img src="./assets/aloo_tikki.jfif" /></div>
@@ -99,9 +122,9 @@
                 </div>
             </div>
 
-            <a>Snacks & Sides</a>
+            <!-- <a>Snacks & Sides</a>
             <button>&#60;</button>
-            <button>&#62;</button>
+            <button>&#62;</button> -->
             
 
             <div class="menu-general">
@@ -173,7 +196,7 @@
             <div class="app-android-left">
                 <img src="./assets/hpmeanapp.png" width="120" height="120" />
                 <br>
-                <video width="70%" autoplay muted loop>
+                <video width="70%" autoplay muted loop style="background-color: #ffbc0d;padding: 1em 0em; border-radius: 20px;">
                     <source src="./assets/app_vid.mp4" type="video/mp4" />
                     This browser does not support video tag.
                 </video>
@@ -254,36 +277,67 @@
             </div>
         </section>
 
-        <section id="news">
-            <div>
-                <h2>News & Highlights</h2>
+        <section class="grid instagram">
+            <div class="instagram-left flex flex-center" style="text-align: center;">
+                <span style="line-height: 30px;">
+                    <b style="font-size: 35px;">Instagram</b><br>
+                    @mcdonaldsinindia<br>
+                    <form action="https://www.instagram.com/mcdonaldsinindia/">
+                        <input style="font-weight: bold;
+                        background-color: #ffca41;
+                        border: 0px;
+                        width: 9.5em;
+                        height: 3em;
+                        border-radius: 38px;
+                        font-size: 20px;" type="submit" value="+FOLLOW" />
+                    </form>
+                </span>
+            </div>
+            <div class="instagram-right flex flex-center flex-wrap">
+                <a class="insta-item" href="https://www.instagram.com/p/CZ8giP-uQSZ/" target="_blank">
+                    <img class="insta-border" src="./assets/insta-1.png"  />
+                </a>
+                <a class="insta-item" href="https://www.instagram.com/p/CaJU_I4IG6s/" target="_blank">
+                    <img class="insta-border" src="./assets/insta-2.png"  />
+                </a>
+                <a class="insta-item" href="https://www.instagram.com/p/CZqagwiuMYy/" target="_blank">
+                    <img class="insta-border" src="./assets/insta-3.png"  />
+                </a>
+                <a class="insta-item" href="https://www.instagram.com/p/CZ0m06fuzss/" target="_blank">
+                    <img class="insta-border" src="./assets/insta-4.png"  />
+                </a>
+                <a class="insta-item" href="https://www.instagram.com/p/CaOhKmrM0Tx/" target="_blank">
+                    <img class="insta-border" src="./assets/insta-5.png"  />
+                </a>
+                <a class="insta-item" href="https://www.instagram.com/p/CZdiiakIJEj/" target="_blank">
+                    <img class="insta-border" src="./assets/insta-6.png"  />
+                </a>
             </div>
         </section>
 
-        <section>
-            <b>Instagram</b><br>
-            @mcdonaldsinindia
-            <form action="https://www.instagram.com/mcdonaldsinindia/">
-                <input style="font-weight: bold;" type="submit" value="+FOLLOW" />
-            </form>
-        </section>
-
-        <section>
+        <!-- <section>
             <h2>Special Offers & News</h2>
             Subscribe now for news, promotions and more delivered right to your inbox
             <form action="https://www.google.com" method="post">
                 <input type="text" placeholder="Enter your E-mail here">
                 <input type="submit" value="SUBSCRIBE">
             </form>
-        </section>
+        </section> -->
+        <hr style="height:2px;border-width:0;color:gray;background-color:#b69a81; width: 70%; margin-top: 15px; ">
 
-        <footer>
-            <img width="50px" src="./assets/mcd.png"/>
-            2020-21 McDonald's. All Rights Reserved.<br>
-            Connaught Plaza Restaurants Private Limited (licensee of McDonald's in North & East India)<br>
-            <a href="https://mcdindia.com/faq/">FAQ</a>|<a href="https://mcdindia.com/terms-conditions/">TERMS & CONDITIONS</a>|<a href="https://mcdindia.com/privacy-policy/">PRIVACY POLICY</a>|<a href="http://mcdindia.com/feedback">FEEDBACK</a>|<a href="mailto: resume@del.in.mcd.com">CAREERS</a>|<a href="https://mcdindia.com/contact/">CONTACT US</a>
+        <footer style="margin-top: 16px; line-height: 30px;">
+            <div class="flex flex-center" style="font-size: 15px;">
+                <img width="50px" src="./assets/mcd.png"/>
+                2020-21 McDonald's. All Rights Reserved.<br>
+            </div>
+            <div class="flex flex-center" style="font-size: 12px;">
+                Connaught Plaza Restaurants Private Limited (licensee of McDonald's in North & East India)<br>
+            </div>
+            <div class="flex flex-center" style="font-size: 12px;">
+                <a href="https://mcdindia.com/faq/">FAQ</a>|<a href="https://mcdindia.com/terms-conditions/">TERMS & CONDITIONS</a>|<a href="https://mcdindia.com/privacy-policy/">PRIVACY POLICY</a>|<a href="http://mcdindia.com/feedback">FEEDBACK</a>|<a href="mailto: resume@del.in.mcd.com">CAREERS</a>|<a    href="https://mcdindia.com/contact/">CONTACT US</a>
+            </div>
         </footer>
-        <link href="./style.css" rel="stylesheet" />
+        
     </body>
 
 </html>
