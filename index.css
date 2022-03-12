@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .height-setter-section-1 div{
-    height: 25em;
+    height: 100%;
 }
 
 .header-padding{
@@ -90,6 +90,8 @@ red_bold{
 
 .menu-general img{
     width: 28em;
+    justify-content: center;
+    align-content: center;
 }
 
 .menu-sidebar{
